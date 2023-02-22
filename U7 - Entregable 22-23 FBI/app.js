@@ -32,7 +32,9 @@ function cargaCriminalesfetch() {
             }
         })
         .then((datos) => {
-            objeto.items.push(datos[0]);
+            for (const key in datos) {
+                objeto.items.push(datos[key]);
+            }
             crearTabla(objeto);
         });
 }
@@ -46,7 +48,9 @@ function cargaCriminalesXMLHttpRequest() {
         xhr.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 let respuesta = JSON.parse(xhr.responseText);
-                objeto.items.push(respuesta[0]);
+                for (const key in respuesta) {
+                    objeto.items.push(respuesta[key]);
+                }
                 crearTabla(objeto);
                 divRespuesta.innerHTML = 'Criminales insertados';
             } else {
