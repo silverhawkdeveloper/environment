@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <title>VACUANCIÓN</title>
+</head>
+
+<body>
+    <label for="comunidades">Selecciona una comunidad</label>
+    <select name="comunidades" id="comunidades">
+        <option></option>
+    </select>
+    <br><br>
+    <div>
+        <label for="dosisAdministradas">Dosis Administradas</label>
+        <input type="number" name="dosisAdministradas" id="dosisAdministradas">
+    </div>
+    <div>
+        <label for="dosisEntregadas">Dosis Entregadas</label>
+        <input type="number" name="dosisEntregadas" id="dosisEntregadas">
+    </div>
+    <div>
+        <label for="dosisPautaCompletada">Dosis Pauta Completada</label>
+        <input type="number" name="dosisPautaCompletada" id="dosisPautaCompletada">
+    </div>
+    <div>
+        <label for="porcentajeEntregadas">Porcentaje Entregadas</label>
+        <input type="number" name="porcentajeEntregadas" id="porcentajeEntregadas">
+    </div>
+    <div>
+        <label for="porcentajePoblacionAdministradas">Porcentaje Poblacion Administradas</label>
+        <input type="number" name="porcentajePoblacionAdministradas" id="porcentajePoblacionAdministradas">
+    </div>
+    <div>
+        <label for="porcentajePoblacionCompletas">Porcentaje Poblacion Completas</label>
+        <input type="number" name="porcentajePoblacionCompletas" id="porcentajePoblacionCompletas">
+    </div>
+
+    <button id="modificarDatos">Modificar datos</button>
+
+    <hr>
+    <div id="resultados"></div>
+    <hr>
+
+    <button id="cargarDatosVacunaciónXML">Cargar datos vacunación XML</button>
+    <button id="cargarDatosVacunaciónFetch">Cargar datos vacunación Fetch</button>
+    <br><br>
+    <div id="tabla"></div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="u7_vacunacion_bis.js"></script>
+  <title>U7_vacunacion_bis</title>
+</head>
+
+<body>
+  <select id="select_comunidades">
+
+  </select>
+  <div>
+    <label for="dosis_entregadas">Dosis entregadas: </label>
+    <input type="number" id="dosis_entregadas">
+  </div>
+  <div>
+    <label for="dosis_administradas">Dosis administradas: </label>
+    <input type="number" id="dosis_administradas">
+  </div>
+  <div>
+    <label for="dosis_pautacompleta">Dosis pauta completa: </label>
+    <input type="number" id="dosis_pautacompletas">
+  </div>
+  <div>
+    <label for="por_entregadas">Porcentaje entregadas: </label>
+    <input type="number" id="por_entregadas">
+  </div>
+  <div>
+    <label for="por_poblacion_admin">Porcentaje administradas: </label>
+    <input type="number" id="por_poblacion_admin">
+  </div>
+  <div>
+    <label for="por_poblacion_completa">Porcentaje completa: </label>
+    <input type="number" id="por_poblacion_completa">
+  </div>
+
+  <button id="modificar_datos">Modificar datos </button>
+
+  <hr>
+
+  <div id="resultados"></div>
+
+  <hr>
+
+  <button id="cargar_datos_xml">Cargar datos vacunación (XMLHttpRequest)</button>
+  <button id="cargar_datos_fetch">Cargar datos vacunación (Fetch)</button>
+
+  <div id="tabla">
+
+  </div>
+
+
+</body>
+
+</html>
