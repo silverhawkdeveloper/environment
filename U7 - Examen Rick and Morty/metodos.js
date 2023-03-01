@@ -45,5 +45,20 @@ if (XMLHttpRequest) {
         }
     };
     xhr.open('POST', 'pagina.json/php');
-    xhr.send(datos);
+    xhr.send(JSON.stringify(datos));
+}
+
+/*************************** ALMACENAMIENTO ***************************/
+function setAlmacenamiento(arrayUsuario) {
+    sessionStorage.setItem("arrayUsuario", JSON.stringify(arrayUsuario));
+}
+
+function getAlmacenamiento() {
+    let objetoarrayUsuario = JSON.parse(sessionStorage.getItem("arrayUsuario"));
+    if (objetoarrayUsuario == null) objetoarrayUsuario = new Array();
+    return objetoarrayUsuario;
+}
+
+function deleteAlmacenamiento() {
+    sessionStorage.clear();
 }
